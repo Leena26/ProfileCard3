@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+}
+
+.hex{
+    width: 300px;
+    height: 342px;
+    background-image: url("https://images.unsplash.com/photo-1572028412480-0a75271c6bb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-size: cover;
+    -webkit-mask: url("./hexagon.png");
+    -webkit-mask-size: 100%;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    height: 260px;
+    width: 320px;
+    padding-left: 100px;
+    padding-right: 30px;
+    margin-left: -80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cont .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cont .text h3{
+    font-size: 25px;
+}
+
+.cont .text p{
+    width: 250px;
+}
+
+.cont .text p:nth-of-type(1){
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.cont .text p:nth-of-type(2){
+    font-size: 15px;
+    margin-top: 20px;
+    color: #0096FF;
+}
+
+.cont .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cont .links i{
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.cont .links i:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
